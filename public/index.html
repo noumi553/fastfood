@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <title>FastFood</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold">🍔 FastFood</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#fastFoodNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="fastFoodNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallrey">Gallrey</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="py-5">
+        <div class="container mt-5">
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <h2 class="text-primary">Delicious Fast Food</h2>
+                    <p class="text-muted lead text-black" style="font-size: large;">Get the best fast food in Karak
+                        Order
+                        now and enjoy crispy burgers fresh
+                        fries and tasty Piza and Shawarma
+                    </p>
+                    <p class="lead text-black" style="color: #654321;">Order now and get 10% off!</p>
+                    <button class="btn btn-primary"><a class="nav-link" href="#gallrey">Order Now</a></button>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid" src="/image" alt="Responsive image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="py-5" style="background-color: rgb(174, 212, 212);">
+        <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center row w-75">
+                <h2 class="text-center text-primary">About</h2>
+                <p class="lead" style="color: black;">
+                    AT [Your Fast Food Brand] we are passionate about serving up mouth-watering
+                    meals that make your day brighter Our chefs craft every day dish with love
+                    using fresh ingredients and secret spices to create flavors you will crave From
+                    classic burgers to crispy fries and refreshoing drinks we have got your fast food
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="gallrey" class="py-5">
+        <div class="container mt-5">
+
+            <div class="modal fade" id="orderModal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h5 class="modal-title">Order Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <h5 class="lead" style="color: red;">Note</h5>
+                            <p class="lead" style="color: red;">If you once order submit it will not cancel</p>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" class="form-control" placeholder="Enter your name.....">
+                            <label for="name">Contact No:</label>
+                            <input type="text" id="number" class="form-control" placeholder="Enter your number....">
+                            <h2 class="lead">Select Your Choice</h2>
+                            <select class="form-select" id="selectform">
+                                <option>Select</option>
+                                <option value="Chicken Burger">Chicken Burger</option>
+                                <option value="Egg Burger">Egg Burger</option>
+                                <option value="Cheez Burger">Cheez Burger</option>
+                                <option value="Large Piza">Large Piza</option>
+                                <option value="Medium Piza">Medium Piza</option>
+                                <option value="Small Piza">Small Piza</option>
+                                <option value="Chicken Shawarma">Chicken Shawarma</option>
+                                <option value="Slat Shawarma">Slat Shawarma</option>
+                            </select>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                Close
+                            </button>
+                            <button type="button" class="btn btn-primary" id="btn">
+                                Confirm Order
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-5 text-center">
+                <div class="col-md-3">
+                    <img src="\imageOne" alt="Image" style="width: 200px; height: 200px;
+                    border-radius: 1rem;">
+                    <h4 class="text-primary">Chicken Burger</h4>
+                    <span class="text-decoration-line-through">Price: 599</span>
+                    <p class="lead" style="color: rgb(4, 0, 255);">Price: 499</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#orderModal">
+                        Order Now
+                    </button>
+                </div>
+
+                <div class="col-md-3">
+                    <img src="\imagetwo" alt="Image" style="width: 200px; height: 200px;
+                    border-radius: 1rem;">
+                    <h4 class="text-primary">Egg Burger</h4><br>
+                    <span class="text-decoration-line-through">Price: 349</span>
+                    <p class="lead" style="color: rgb(4, 0, 255);">Price: 299</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#orderModal">
+                        Order Now
+                    </button>
+                </div>
+
+                <div class="col-md-3" id="cheezbburger">
+                    <img src="\imagethree" alt="Image" style="width: 200px; height: 200px;
+                    border-radius: 1rem;">
+                    <h4 class="text-primary">Cheez Burger</h4>
+                    <span class="text-decoration-line-through">Price: 549</span>
+                    <p class="lead" style="color: rgb(4, 0, 255);">Price: 499</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#orderModal">
+                        Order Now
+                    </button>
+                </div>
+
+                <div class="col-md-3">
+                    <img src="\imageFour" alt="Image" style="width: 200px; height: 200px;
+                    border-radius: 1rem;">
+                    <h4 class="text-primary">Large Piza</h4>
+                    <span class="text-decoration-line-through">Price: 1399</span>
+                    <p class="lead" style="color: rgb(4, 0, 255);">Price: 1099</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#orderModal">
+                        Order Now
+                    </button>
+                </div>
+
+                <div class="col-md-3">
+                    <img src="\imagefive" alt="Image" style="width: 200px; height: 200px;
+                    border-radius: 1rem;">
+                    <h4 class="text-primary">Medium Piza</h4><br>
+                    <span class="text-decoration-line-through">Price: 889</span>
+                    <p class="lead" style="color: rgb(4, 0, 255);">Price: 799</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#orderModal">
+                        Order Now
+                    </button>
+                </div>
+
+                <div class="col-md-3">
+                    <img src="\imagesix" alt="Image" style="width: 200px; height: 200px;
+                    border-radius: 1rem;">
+                    <h4 class="text-primary">Small Piza</h4>
+                    <span class="text-decoration-line-through">Price: 399</span>
+                    <p class="lead" style="color: rgb(4, 0, 255);">Price: 299</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#orderModal">
+                        Order Now
+                    </button>
+                </div>
+
+                <div class="col-md-3">
+                    <img src="\imageeight" alt="Image" style="width: 200px; height: 200px;
+                    border-radius: 1rem;">
+                    <h4 class="text-primary">Chicken Shawarma</h4><br>
+                    <span class="text-decoration-line-through">Price: 549</span>
+                    <p class="lead" style="color: rgb(4, 0, 255);">Price: 499</p>
+                    <button type="button" id="btn" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#orderModal">
+                        Order Now
+                    </button>
+                </div>
+
+                <div class="col-md-3">
+                    <img src="\imageseven" alt="Image" style="width: 200px; height: 200px;
+                    border-radius: 1rem;">
+                    <h4 class="text-primary">Slat Shawarma</h4><br>
+                    <span class="text-decoration-line-through">Price: 549</span>
+                    <p class="lead" style="color: rgb(4, 0, 255);">Price: 499</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#orderModal">
+                        Order Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="team" class="py-5" style="background-color: rgb(174, 212, 212);">
+        <div class="container">
+            <h2 class="text-primary text-center mb-4">Team Member</h2>
+
+            <div class="row justify-content-center gy-4">
+                <div class="col-12 col-md-4 text-center">
+                    <img src="/userthree" class="rounded-circle mb-3" width="200" height="200" alt="">
+                    <h5 class="text-muted">Name</h5>
+                    <p>Nouman Aziz</p>
+                    <p>Manager</p>
+                    <p>Manage their customer orders</p>
+                </div>
+
+                <div class="col-12 col-md-4 text-center">
+                    <img src="/userone" class="rounded-circle mb-3" width="200" height="200" alt="">
+                    <h5 class="text-muted">Name</h5>
+                    <p>Azhar Mehmood</p>
+                    <p>Cook Man</p>
+                    <p>Make delicious food</p>
+                </div>
+
+                <div class="col-12 col-md-4 text-center">
+                    <img src="/usertwo" class="rounded-circle mb-3" width="200" height="200" alt="">
+                    <h5 class="text-muted">Name</h5>
+                    <p>Uzair Gull</p>
+                    <p>Delivery Boy</p>
+                    <p>Deliver the customer order</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center p-3 ms-auto">
+        <p class="lead">All reserve Right 2026 @Nouman aziz and Azhar Mehmood</p>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    let btn = document.getElementById("btn");
+let select = document.getElementById("selectform");
+
+let obj = [];
+
+console.log(obj)
+
+btn.addEventListener('click', () => {
+    let nameInput = document.getElementById("name");
+    let numberInput = document.getElementById("number");
+
+    let name = nameInput.value;
+    let number = numberInput.value;
+    let val = select.value;
+
+    if (!name || !number || !val || val === "Select") {
+        alert("Please fill the form");
+        return;
+    }
+
+    if (number.length < 11) {
+        alert("Your number is too short");
+        return;
+    }
+
+    obj = [name, number, val];
+
+    fetch('http://localhost:8000/submit', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(obj)
+    })
+    .then(res => res.json())
+    .then(data => {
+        alert(data.msg);
+
+        nameInput.value = "";
+        numberInput.value = "";
+        select.value = "Select";
+
+        obj = [];
+    })
+    .catch(error => console.log(error));
+});
+
+</script>
+
+</html>
