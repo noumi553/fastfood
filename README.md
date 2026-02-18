@@ -12,10 +12,34 @@
 ---
 [![](https://visitcount.itsvg.in/api?id=noumi553&icon=0&color=0)](https://visitcount.itsvg.in)
 
-##📌 About The Project
+## 📌About The Project
 
 The FastFood Gallery App is a simple and user-friendly food ordering web application.
 It allows users to browse food items displayed in a gallery format and place an order instantly — without login or cart functionality.
+
+## This project focuses on:
+
+Clean UI design
+
+Simple ordering workflow
+
+Fast interaction
+
+Beginner-friendly structure
+
+## ✨ Features
+
+🖼️ Responsive food gallery layout
+
+📄 Item details (name, image, price)
+
+🛒 Direct order placement
+
+⚡ Quick confirmation process
+
+🎯 No login system
+
+🎯 No cart system
 
 ## workflow
 
