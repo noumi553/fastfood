@@ -12,4 +12,34 @@
 ---
 [![](https://visitcount.itsvg.in/api?id=noumi553&icon=0&color=0)](https://visitcount.itsvg.in)
 
+┌───────────┐
+│   User    │
+└─────┬─────┘
+      │
+      ▼
+┌─────────────────┐
+│ Open Application│
+└─────┬───────────┘
+      │
+      ▼
+┌─────────────────┐
+│ View Food Gallery│
+└─────┬───────────┘
+      │
+      ▼
+┌─────────────────┐
+│ Select Item     │
+└─────┬───────────┘
+      │
+      ▼
+┌─────────────────┐
+│ Confirm Order   │
+└─────┬───────────┘
+      │
+      ▼
+┌─────────────────┐
+│ Order Processed │
+└─────────────────┘
+
+
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
