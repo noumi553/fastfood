@@ -129,8 +129,4 @@ app.post('/submit',async(req,res)=>{
     res.json({msg:'Data submit successfully'})
 })
 
-const port = process.env.PORT_NO || 8000
-
-app.listen(port,()=>{
-    console.log("Server is running on port number " + port)
-})
+module.exports = app
